@@ -6,10 +6,10 @@ import cv2
 import yaml
 import shutil
 
-train_imag = r'D:\Viewer\JORDAN\Ai\folder\DATA\data\training_images'
-test_imag  = r'D:\Viewer\JORDAN\Ai\folder\DATA\data\testing_images'
-csv_file   = r'D:\Viewer\JORDAN\Ai\folder\DATA\data\train_solution_bounding_boxes.csv'
-output     = r'C:\Users\Lenovo\Desktop\dataset'
+train_imag = r'D:\..'
+test_imag  = r'D:\..'
+csv_file   = r'D:\...csv'
+output     = r'C:\..'
 
 # الملفات الي راح نعملهن
 folders = [r'images\train', r'images\val', r'labels\train', r'labels\val']
@@ -73,6 +73,7 @@ with open(os.path.join(output, 'data.yaml'), 'w') as f:
     yaml.dump(daly_yaml, f, default_flow_style=False)
 
 print('done: data yaml')
+
 
 
 
