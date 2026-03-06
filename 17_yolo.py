@@ -4,7 +4,7 @@ def Train():
 
 
     MODELs = YOLO('yolov5n.pt') 
-    results = MODELs.train(data= r'D:\Viewer\JORDAN\Ai\folder\DATA\car data\data.yaml',
+    results = MODELs.train(data= r'D:\..\data.yaml',
                         epochs=10 , batch=8, imgsz=320, verbose=False)
 
 # عمل الاهختبار عن طريق الكامرا
@@ -13,7 +13,7 @@ def TestCam():
     import cv2
 
     # best.pt ملف الـ 
-    model = YOLO(r'C:\Users\Lenovo\Desktop\Ai hasan\one\python\runs\detect\train3\weights\best.pt')
+    model = YOLO(r'C:\..\best.pt')
 
     cap = cv2.VideoCapture(0)
 
@@ -35,4 +35,5 @@ def TestCam():
 
 
 TestCam()
+
 
