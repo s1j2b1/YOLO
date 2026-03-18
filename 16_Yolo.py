@@ -6,6 +6,7 @@ import cv2
 import yaml
 import shutil
 
+# روابط الملفات
 train_imag = r'D:\..'
 test_imag  = r'D:\..'
 csv_file   = r'D:\...csv'
